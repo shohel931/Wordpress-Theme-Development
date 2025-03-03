@@ -1,4 +1,10 @@
- img{
+:root{
+  --pink: #ea1a70;
+}
+
+
+
+img{
   max-width: 100%;
 }
 #header_area{
@@ -43,7 +49,7 @@ h6 {
   text-decoration: none;
 }
 #header_area .col-md-9 ul li a:hover {
-  background: #ea1a70;
+  background:var(--pink);
   color: #fff;
 }
 
@@ -73,7 +79,7 @@ h6 {
   color: #262626;
 }
 #header_area .col-md-9 ul li:hover a {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 #header_area .col-md-9 ul li:hover ul li a {
@@ -94,7 +100,7 @@ h6 {
   left: 200px;
 }
 #header_area .col-md-9 ul li ul li:hover a {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 #header_area .col-md-9 ul ul li:hover ul li a {
@@ -102,7 +108,7 @@ h6 {
   color: #fff;
 }
 #header_area .col-md-9 ul ul li ul li a:hover {
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
 }
 
@@ -170,7 +176,7 @@ font-size: 30px;
   text-decoration: none;
 }
 #body_area .post_details h2 a:hover{
-  color: #ea1a70;
+  color: var(--pink);
   transition: 0.5s;
 }
 
@@ -220,7 +226,7 @@ font-size: 30px;
 /* Next and Previous Post */
 
 #page_nav p.pages{
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
   padding: 5px 10px;
   font-size: 16px;
@@ -267,9 +273,9 @@ font-size: 30px;
  border-radius: 5px 0 0 5px; 
 }
 #body_area .child_sidebar button[type="submit"]{
-  background: #ea1a70;
+  background: var(--pink);
   color: #fff;
-  border: 1px solid #ea1a70; 
+  border: 1px solid var(--pink); 
   border-radius: 0 5px 5px 0;
   margin: 0;
   padding: 10px;
@@ -298,7 +304,7 @@ margin-bottom: 5px;
   text-decoration: none;
 }
 #body_area .child_sidebar ul li a:hover{
-color: #ea1a70;
+color: var(--pink);
 }
 
 /* Contact Us */
@@ -328,7 +334,7 @@ margin-top: 10px;
   text-decoration: none;
 }
 .child_sidebar ul li a:hover{
-color: #ea1a70;
+color: var(--pink);
 }
 
 
@@ -341,9 +347,9 @@ color: #ea1a70;
   border-radius: 5px 0 0 5px; 
  }
 .child_sidebar button[type="submit"]{
-   background: #ea1a70;
+   background: var(--pink);
    color: #fff;
-   border: 1px solid #ea1a70; 
+   border: 1px solid var(--pink); 
    border-radius: 0 5px 5px 0;
    margin: 0;
    padding: 10px;

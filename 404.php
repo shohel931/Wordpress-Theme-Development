@@ -1,5 +1,5 @@
 <?php 
-// Main Template Header
+// The Template displaying for 404 pages
 get_header(); ?>
 
 
@@ -13,8 +13,9 @@ get_header(); ?>
   </div>
 </div>
 </section>
-
-<h1>404 Page</h1>
-
+<div id="not_fuond">
+<p>404 page</p>
+<h1>Oops! This Page Not Found</h1>
+</div>
 
 <?php get_footer(); ?>

@@ -1,7 +1,7 @@
 
 <?php 
 /*
-* This Template displaying archive pages
+* This Template displaying search resultes
 */  
 get_header(); ?>
 
@@ -9,11 +9,10 @@ get_header(); ?>
   <div class="container">
     <div class="row">
       <div class="col-md-9">
-       <?php 
-        the_archive_title('<h2 class="archive_title">','</h2>');
-        the_archive_description('<div class="archive_descrivtion">','</div>');
+       <div class="search_title">
  
-      ?>
+       <h1 class="title"><?php printf(__('Search Results for: %s', 'sohelrana'), get_search_query());  ?></h1>
+       </div>
 
 
     <?php get_template_part('template_part/post_setup'); ?>

@@ -355,3 +355,38 @@ color: #ea1a70;
  border: 1px solid orange; 
  }
  
+
+ /* Arcive_Title */
+.archive_title{
+  background: #262626;
+  padding: 10px;
+  color: #fff; 
+  font-size: 25px; 
+  margin-bottom: 20px;
+}
+
+ /* Search_Title */
+.search_title{
+  background: #262626;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+.search_title h1{
+ color: #fff;
+ font-size: 20px;
+ margin-bottom: 0;
+}
+
+/* 404 page */
+#not_fuond{
+  text-align: center;
+}
+#not_fuond p{
+  font-size: 30px;
+  font-weight: 600;
+}
+#not_fuond h1{
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+}

@@ -42,6 +42,32 @@ function sohel_customizar_register($wp_customize) {
     ), 
   ));
 
+// Theme color
+$wp_customize-> add_section('sohel_colors', array(
+  'title' =>__('Theme Colors', 'sohelrana'),
+  'description'=> 'If you interested to update your color.'
+));
+
+$wp_customize-> add_setting('sohel_bg_color', array(
+  'default'=> '#ffffff',
+));
+
+
+$wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'sohel_bg_color', array(
+  'label'=> 'Background Color',
+  'section'=> 'sohel_colors',
+  'setting'=> 'sohel_bg_color',
+)));
+
+$wp_customize-> add_setting('sohel_primary_colors', array(
+  'default'=> '#ea1a70',
+));
+
+$wp_customize-> add_control(new WP_Customize_Color_Control($wp_customize, 'sohel_primary_colors', array(
+  'label'=> 'Primary Color',
+  'section'=> 'sohel_colors',
+  'setting'=> 'sohel_primary_colors',
+)));
 
 
    
@@ -66,3 +92,13 @@ function sohel_customizar_register($wp_customize) {
 }
 
 add_action('customize_register', 'sohel_customizar_register');
+
+function sohel_theme_color_cus(){
+  ?> 
+  <style>
+   body{background:<?php  echo get_theme_mod('sohel_bg_color'); ?>}
+  :root{ --pink:<?php  echo get_theme_mod('sohel_primary_colors'); ?>}
+  </style>
+  <?php 
+}
+add_action('wp_head', 'sohel_theme_color_cus' );
